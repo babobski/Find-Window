@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<overlay id="findWindow" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://findWindow/content/overlay.js" />
+	
+	<commandset id="allcommands">
+	  <command id="Tasks:find" oncommand="extensions.findWindow.find();"/>
+	  <command id="Tasks:replace" oncommand="extensions.findWindow.replace();"/>
+	  <command id="Tasks:findinfiles" oncommand="extensions.findWindow.findinfiles();"/>
+	  <command id="Tasks:replaceinfiles" oncommand="extensions.findWindow.replaceinfiles();"/>
+	  <command id="Tasks:findincurrproject" oncommand="extensions.findWindow.findincurrproject();"/>
+	  <command id="Tasks:replaceincurrproject" oncommand="extensions.findWindow.replaceincurrproject();"/>
+    </commandset>
+
+    <menupopup id="popup_tools">
+      <menu id="menu_findWindow" label="Find Window">
+        <menupopup id="menu_findWindow_popup">
+          <menuitem id="menu_findWindow_find"
+                  label="Find"
+                  observes="Tasks:find"
+                  class="menu-iconic-wide" />
+		  <menuitem id="menu_findWindow_replace"
+                  label="Replace"
+                  observes="Tasks:replace"
+                  class="menu-iconic-wide" />
+		  <menuitem id="menu_findWindow_findinfiles"
+                  label="Find in Files"
+                  observes="Tasks:findinfiles"
+                  class="menu-iconic-wide" />
+		  <menuitem id="menu_findWindow_replaceinfiles"
+                  label="Replace in Files"
+                  observes="Tasks:replaceinfiles"
+                  class="menu-iconic-wide" />
+		  <menuitem id="menu_findWindow_findincurrproject"
+                  label="Find in Current Project"
+                  observes="Tasks:findincurrproject"
+                  class="menu-iconic-wide" />
+		  <menuitem id="menu_findWindow_replaceincurrproject"
+                  label="Replace in Current Project"
+                  observes="Tasks:replaceincurrproject"
+                  class="menu-iconic-wide" />
+        </menupopup>
+      </menu>
+    </menupopup>
+	
+</overlay>

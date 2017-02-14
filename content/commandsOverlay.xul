@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="FindWindowCommandOverlay"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		 
+    <command id="cmd_startIncrementalSearch" key="key_cmd_startIncrementalSearch" oncommand="extensions.findWindow.find()"/>
+	<command id="cmd_replace" key="key_cmd_replace" oncommand="extensions.findWindow.replace()"/>
+	<command id="cmd_findInFiles" key="key_cmd_findInFiles" oncommand="extensions.findWindow.findinfiles()"/>
+	<command id="cmd_replaceInFiles" key="key_cmd_replaceInFiles" oncommand="extensions.findWindow.replaceinfiles()"/>
+	<command id="cmd_find" key="key_cmd_find" oncommand="extensions.findWindow.find()"/>
+	<command id="cmd_findInCurrProject" key="key_cmd_findInCurrProject" oncommand="extensions.findWindow.findincurrproject()"/>
+	<command id="cmd_replaceInCurrProject" key="key_cmd_replaceInCurrProject" oncommand="extensions.findWindow.replaceincurrproject()"/>
+
+</overlay>

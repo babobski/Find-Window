@@ -1,0 +1,5 @@
+content findWindow content/
+overlay chrome://komodo/content/komodo.xul chrome://findWindow/content/overlay.xul
+overlay chrome://komodo/content/find/embedded.xul chrome://findWindow/content/embedded.xul
+overlay chrome://komodo/content/commandsOverlay.xul chrome://findWindow/content/commandsOverlay.xul
+skin findWindow classic/1.0 skin/

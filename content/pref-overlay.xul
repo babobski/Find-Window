@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="less://komodo/skin/global/global.less" type="text/css"?>
+
+<prefwindow id="findWindow-prefs"
+	 title="Find Window Preferences"
+	 width="300"
+	 height="90"
+	 xmlns:html="http://www.w3.org/1999/xhtml"
+	 xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<prefpane id="findWindow-pane" label="Find Window Preferences" style="padding: 10px;">
+		<preferences>
+			<preference id="pref_raised" name="extensions.findWindow.alwaysRaised" type="bool"/>
+		</preferences>
+		
+		<checkbox id="alwaysRaised" preference="pref_raised" checked="true" label="Always keep the find window raised."/>
+		
+		
+	</prefpane>
+
+</prefwindow>
+

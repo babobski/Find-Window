@@ -1,0 +1,73 @@
+@import url("chrome://komodo/skin/global/colors.less");
+@import url("resource://profile/colors.less");
+
+#find2-window {
+	padding-top: 8px;
+	width: 900px;
+	height: 150px;
+	#find-row,
+	#repl-row {
+		.buttons button {
+			margin-bottom: 5px !important;
+			margin-left: 5px !important;
+		}
+	}
+	#find-box-closer {
+		display: none;
+	}
+	#find-options {
+		checkbox {
+			&:focus {
+				outline: none !important;
+			}
+			.checkbox-spacer-box:before {
+				font-family: 'Segoe UI', 'Droid Sans', 'Open Sans', sans-serif !important;
+				color: @foreground;
+				font-size: 11px !important;
+			}
+			&#opt-case {
+				&[value="match-case"] .checkbox-spacer-box:before {
+					content: 'Match case' !important;
+				}
+				&[value="ignore-case"] .checkbox-spacer-box:before {
+					content: 'Ignore Case' !important;
+				}
+				&[value="smart-case"] .checkbox-spacer-box:before {
+					content: 'Smart Case' !important;
+				}
+			}
+			&#opt-word {
+				.checkbox-spacer-box:before {
+					content: 'No Match word' !important;
+				}
+				&[checked="true"] {
+					.checkbox-spacer-box:before {
+						content: 'Match word' !important;
+					}
+				}
+			}
+			&#opt-multiline {
+				.checkbox-spacer-box:before {
+					content: 'No Multi line' !important;
+				}
+				&[checked="true"] {
+					.checkbox-spacer-box:before {
+						content: 'Multi line' !important;
+					}
+				}
+			}
+			&#opt-regex {
+				.checkbox-spacer-box:before {
+					content: 'No Regex' !important;
+				}
+				&[checked="true"] {
+					.checkbox-spacer-box:before {
+						content: 'Regex' !important;
+					}
+				}
+			}
+		}	
+	}
+}
+
+
